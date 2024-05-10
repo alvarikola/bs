@@ -12,6 +12,7 @@ class Beautiful:
         source = urllib.request.urlopen(url).read()
         soup = bs.BeautifulSoup(source, 'lxml')
         for titulo in soup.find_all(f"{etiqueta}"):
+            print(titulo.string)
             return titulo.string
 
 
