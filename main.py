@@ -6,7 +6,8 @@ from beautiful import Beautiful
 
 
 class ComparacionWeb:
-    def comparar(self, url1:str, url2:str, etiqueta:str):
+    @staticmethod
+    def comparar(url1:str, url2:str, etiqueta:str):
         beautiful = Beautiful()
         argumento1 = beautiful.obtenerInformacion(url1, etiqueta)
         argumento2 = beautiful.obtenerInformacion(url2, etiqueta)
