@@ -6,7 +6,7 @@ import bs4 as bs
 import urllib.request
 
 class Beautiful:
-    def obtenerInformacion(self, url:str, etiqueta:str):
+    def obtenerInformacion(self, url:str, etiqueta:str) ->str:
         self.url = url
         self.etiqueta = etiqueta
         source = urllib.request.urlopen(url).read()
